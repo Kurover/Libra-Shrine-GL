@@ -883,8 +883,7 @@ $:/_/ScratchPad
 &lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[all[tiddlers]tag[Home]]&quot; class=&quot;tc-horizontal&quot; /&gt;</pre>
 </div>
 <div caption="Active Tab" created="20191209171822813" modified="20191209172035223" tags="" title="$:/_/Guide/Side-Active Tab">
-<pre>
-```
+<pre>```
 The active tab that is currently... active. This is my personal favorite tab if I'm on mobile, making it much less cluttered
 
 It is recommended that you close unused tabs to reduce memory usage and the chance of the wiki lagging.
@@ -892,29 +891,25 @@ It is recommended that you close unused tabs to reduce memory usage and the chan
 </pre>
 </div>
 <div caption="History" created="20191209172101498" modified="20191209174508160" tags="" title="$:/_/Guide/Side-History">
-<pre>
-```
+<pre>```
 This tab logs the creation or modification to a page (or tiddly) on that date. Check this tab if you want to see how incosistent the creator is~!
 ```
 </pre>
 </div>
 <div caption="Info" created="20191209170515343" modified="20191209171750273" tags="" title="$:/_/Guide/Side-Info">
-<pre>
-```
+<pre>```
 This is the current page you're looking at. Contains a nice collection of navigation guide~
 ```
 </pre>
 </div>
 <div caption="Misc." created="20191209172245323" modified="20191209172406817" tags="" title="$:/_/Guide/Side-Misc">
-<pre>
-```
+<pre>```
 Misc tab for those who are proficient with TiddlyWiki and would like to see the spaghetti mess the creator did to his own creation. Don't touch this because honestly... it's a maze here.
 ```
 </pre>
 </div>
 <div caption="Navigation" created="20191209170633680" modified="20191209173320954" tags="" title="$:/_/Guide/Side-Navigation">
-<pre>
-```
+<pre>```
 This will be your bread and butter to navigate the wiki that ACTUALLY contains useful information. sigh, the creator really need to work out with his custom search feature.
 ```
 </pre>
@@ -931,23 +926,26 @@ This will be your bread and butter to navigate the wiki that ACTUALLY contains u
 Hover image for tooltip
 &lt;/center&gt;</pre>
 </div>
-<div caption="Info" created="20191203080009690" list-before="TableOfContents" modified="20191209174658734" tags="$:/tags/SideBar" title="$:/_/Sidebar-Information">
+<div caption="Info" created="20191203080009690" list-before="TableOfContents" modified="20191209175306398" tags="$:/tags/SideBar" title="$:/_/Sidebar-Information">
 <pre>&lt;center&gt;
 [img width=128px [IllithFace.png]]
 &lt;br&gt;&quot;I will be your company throughout the wiki!&quot;
 &lt;hr&gt;
 Hello, this is the Info tab on the sidebar. This tab contains useful guide to navigate and use Tiddly Wiki! Though honestly, just click on the &quot;Navigation&quot; tab, ignore everything else and you're set!
 &lt;hr&gt;
-If you see an italic text on right side of the page, that is my comment to the content. Usually something to expose the creator.
+The
+&lt;$button message=&quot;tm-browser-refresh&quot; tooltip={{$:/language/Buttons/Refresh/Hint}} aria-label={{$:/language/Buttons/Refresh/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;match[yes]]&quot;&gt;
+{{$:/core/images/refresh-button}}
+&lt;/$list&gt;
+&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;match[yes]]&quot;&gt;
+&lt;span class=&quot;tc-btn-text&quot;&gt;&lt;$text text={{$:/language/Buttons/Refresh/Caption}}/&gt;&lt;/span&gt;
+&lt;/$list&gt;
+&lt;/$button&gt;
+Button (located below the title) refreshes the wiki, please use this if you want to update the wiki.
 &lt;br&gt;&lt;br&gt;
-You can hide the sidebar by clicking the
-&lt;$reveal state=&quot;$:/state/sidebar&quot; type=&quot;nomatch&quot; text=&quot;no&quot;&gt;
-&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;no&quot; tooltip={{$:/language/Buttons/HideSideBar/Hint}} aria-label={{$:/language/Buttons/HideSideBar/Caption}} class=&quot;tc-btn-invisible&quot;&gt;{{$:/core/images/chevron-right}}&lt;/$button&gt;
-&lt;/$reveal&gt;
-&lt;$reveal state=&quot;$:/state/sidebar&quot; type=&quot;match&quot; text=&quot;no&quot;&gt;
-&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;yes&quot; tooltip={{$:/language/Buttons/ShowSideBar/Hint}} aria-label={{$:/language/Buttons/ShowSideBar/Caption}} class=&quot;tc-btn-invisible&quot;&gt;{{$:/core/images/chevron-left}}&lt;/$button&gt;
-&lt;/$reveal&gt;
-button on the top-right screen (or you can click the button here too!)
+If you see an italic text on right side of the page, that is my comment to the content. Usually something to expose the creator.
+
 
 &lt;hr&gt;
 
@@ -10989,8 +10987,8 @@ very-muted-foreground: #888888
 <div created="20191202172843296" modified="20191209162953749" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Shadows</pre>
 </div>
-<div created="20191209173440506" modified="20191209174415631" title="$:/state/tab--160294542">
-<pre>$:/_/Guide/Side-History</pre>
+<div created="20191209173440506" modified="20191209175315916" title="$:/state/tab--160294542">
+<pre>$:/_/Guide/Side-Info</pre>
 </div>
 <div created="20191203080601498" modified="20191203080655122" title="$:/state/tab--1853787574">
 <pre>Roadmap</pre>
@@ -11067,7 +11065,7 @@ very-muted-foreground: #888888
 <div created="20191209165308088" modified="20191209165953570" title="$:/state/tab/sidebar--356319527">
 <pre>Creator Info</pre>
 </div>
-<div created="20191202145609279" modified="20191209174721163" title="$:/state/tab/sidebar--595412856">
+<div created="20191202145609279" modified="20191209175318223" title="$:/state/tab/sidebar--595412856">
 <pre>$:/_/Sidebar-Information</pre>
 </div>
 <div created="20191202162811910" modified="20191203120040435" title="$:/state/tabs/controlpanel/toolbars-1345989671">
@@ -11157,8 +11155,8 @@ very-muted-foreground: #888888
 <div created="20191202183942843" list="$:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/edit $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/open-window $:/core/ui/Buttons/permaview $:/core/ui/Buttons/close-others $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/close $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar" modified="20191202183959172" title="$:/tags/ViewToolbar">
 <pre></pre>
 </div>
-<div created="20191202172840767" modified="20191209174516997" title="$:/temp/advancedsearch">
-<pre>more</pre>
+<div created="20191202172840767" modified="20191209175004252" title="$:/temp/advancedsearch">
+<pre>refresh</pre>
 </div>
 <div created="20191202145748531" modified="20191202145748531" title="$:/temp/HidePluginWarning">
 <pre>yes</pre>
@@ -11977,7 +11975,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20191202154551500" dependents="" description="Basic theme" modified="20191202154551500" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" server-url="https://tiddlywiki.com/library/v5.1.21/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.21">
 <pre></pre>
 </div>
-<div created="20191202171702900" modified="20191209174404538" title="$:/temp/search">
+<div created="20191202171702900" modified="20191209175004252" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20191203060834215" modified="20191203060834215" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
