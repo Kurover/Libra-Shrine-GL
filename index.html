@@ -170,9 +170,19 @@ Error message and password prompt
 
 <li>$:/_/Guide/Side-Navigation</li>
 
-<li>$:/_/ScratchPad</li>
-
 <li>$:/_/Sidebar-Information</li>
+
+<li>$:/_/Snippet/IllithCommentary</li>
+
+<li>$:/_/Snippet/PharagraphColorLink</li>
+
+<li>$:/_/Snippet/PharagraphColorWarning</li>
+
+<li>$:/_/Snippet/TextColorLink</li>
+
+<li>$:/_/Snippet/TextColorWarning</li>
+
+<li>$:/_/WelcomeTutorial</li>
 
 <li>$:/config/AutoSave</li>
 
@@ -382,6 +392,8 @@ Error message and password prompt
 
 <li>$:/state/image-picker/system--1217244810</li>
 
+<li>$:/state/image-picker/system--1614077807</li>
+
 <li>$:/state/palettemanager/$:/palettes/Ancient/background</li>
 
 <li>$:/state/palettemanager/$:/palettes/Ancient/tiddler-editor-background</li>
@@ -424,6 +436,8 @@ Error message and password prompt
 
 <li>$:/state/tab--1002863831</li>
 
+<li>$:/state/tab--1016668953</li>
+
 <li>$:/state/tab--1129714006</li>
 
 <li>$:/state/tab--118161433</li>
@@ -445,6 +459,8 @@ Error message and password prompt
 <li>$:/state/tab--2112689675</li>
 
 <li>$:/state/tab--514103498</li>
+
+<li>$:/state/tab--519490205</li>
 
 <li>$:/state/tab--86143343</li>
 
@@ -474,6 +490,8 @@ Error message and password prompt
 
 <li>$:/state/tab-2065006209</li>
 
+<li>$:/state/tab-782708143</li>
+
 <li>$:/state/tab-867401039</li>
 
 <li>$:/state/tab/moresidebar--1335084432</li>
@@ -500,11 +518,15 @@ Error message and password prompt
 
 <li>$:/state/toc/TableOfContents-Home--118161433</li>
 
+<li>$:/state/toc/TableOfContents-World--118161433</li>
+
 <li>$:/state/toc/TableOfContents/Character-Main Character--118161433</li>
 
 <li>$:/state/tree/$:/_/</li>
 
 <li>$:/state/tree/$:/_/Guide/</li>
+
+<li>$:/state/tree/$:/_/Snippet/</li>
 
 <li>$:/state/tree/$:/boot/</li>
 
@@ -826,8 +848,6 @@ Error message and password prompt
 
 <li>TableOfContents</li>
 
-<li>TiddlerA</li>
-
 <li>Torkhen</li>
 
 <li>Vivelia Chrystell</li>
@@ -848,7 +868,7 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20191203062019938" modified="20191209174622547" tags="$:/tags/Stylesheet" title="$:/_/CSS Setting" type="text/css">
+<div created="20191203062019938" modified="20191211075500430" tags="$:/tags/Stylesheet" title="$:/_/CSS Setting" type="text/css">
 <pre>.tc-subtitle {
 display: none;
 }
@@ -857,30 +877,57 @@ display: none;
 margin-right: 7%;
 }
 
-.tc-topbar-right {
+.text-link{
+color:#f0de79;
+}
 
+.text-warning{
+color:#f86861;
 }</pre>
 </div>
-<div created="20191208200303223" modified="20191209171357253" title="$:/_/DevShortcut">
-<pre>!__WIP Stuff__
+<div created="20191208200303223" modified="20191212110854600" tags="$:/tags/MoreSideBar" title="$:/_/DevShortcut">
+<pre>$:/_/DevShortcut
+
+!__WIP Stuff__
 &lt;div class=&quot;tc-table-of-contents&quot;&gt;
 &lt;&lt;toc-selective-expandable 'WIP'&gt;&gt;
 &lt;/div&gt;
 
-! __Dev Tool__
+! __Tiddly Shortcut__
 Tiddly Wiki &lt;a href=&quot;https://tiddlywiki.com&quot;&gt;Homepage&lt;/a&gt;
+
+$:/_/Sidebar-Information
 
 [[TableOfContents]]
 
 $:/DefaultTiddlers
 
-$:/_/ScratchPad
-
 $:/SiteSubtitle
 
-$:/_/ScratchPad
+!__Code Shortcut__
 
-&lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[all[tiddlers]tag[Home]]&quot; class=&quot;tc-horizontal&quot; /&gt;</pre>
+TABBED SECTION CODE
+
+```
+&lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[all[tiddlers]tag[SidebarMain]]&quot; class=&quot;tc-vertical&quot; /&gt;
+
+&lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[all[tiddlers]tag[SidebarMain]]&quot; class=&quot;tc-horizontal&quot; /&gt;
+```
+
+IMAGE CODE
+
+```
+[img width=128 [Caption Here|ProfilePicture.png]]
+```
+
+Colored Pharagraph
+
+```
+&lt;p style=color:white;&gt; TEXT &lt;/p&gt;
+#f0de79 Link Yellow
+#f86861 Warning Red
+```
+</pre>
 </div>
 <div caption="Active Tab" created="20191209171822813" modified="20191209172035223" tags="" title="$:/_/Guide/Side-Active Tab">
 <pre>```
@@ -908,48 +955,30 @@ Misc tab for those who are proficient with TiddlyWiki and would like to see the 
 ```
 </pre>
 </div>
-<div caption="Navigation" created="20191209170633680" modified="20191209173320954" tags="" title="$:/_/Guide/Side-Navigation">
+<div caption="Navigation" created="20191209170633680" modified="20191211072502432" tags="" title="$:/_/Guide/Side-Navigation">
 <pre>```
-This will be your bread and butter to navigate the wiki that ACTUALLY contains useful information. sigh, the creator really need to work out with his custom search feature.
+This will be your bread and butter to navigate the wiki that ACTUALLY contain useful information. sigh, the creator really need to work out with his custom search feature.
 ```
 </pre>
 </div>
-<div created="20191203075359532" modified="20191209171235935" tags="$:/_/DevShortcut" title="$:/_/ScratchPad">
-<pre>&lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[all[tiddlers]tag[SidebarMain]]&quot; class=&quot;tc-vertical&quot; /&gt;
-
-&lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[all[tiddlers]tag[SidebarMain]]&quot; class=&quot;tc-horizontal&quot; /&gt;
-
-&lt;center&gt;
-[img width=128 [A headshot of Clover|ProfilePicture.png]]
-&lt;/center&gt;
-&lt;center&gt;
-Hover image for tooltip
-&lt;/center&gt;</pre>
-</div>
-<div caption="Info" created="20191203080009690" list-before="TableOfContents" modified="20191209175306398" tags="$:/tags/SideBar" title="$:/_/Sidebar-Information">
+<div caption="Info" created="20191203080009690" list-before="TableOfContents" modified="20191211080416409" tags="$:/tags/SideBar" title="$:/_/Sidebar-Information">
 <pre>&lt;center&gt;
 [img width=128px [IllithFace.png]]
 &lt;br&gt;&quot;I will be your company throughout the wiki!&quot;
 &lt;hr&gt;
-Hello, this is the Info tab on the sidebar. This tab contains useful guide to navigate and use Tiddly Wiki! Though honestly, just click on the &quot;Navigation&quot; tab, ignore everything else and you're set!
+&lt;p style=color:#f86861;&gt;''You can click on the &quot;Navigation&quot; tab, skip everything else here and you'll be fine!''&lt;/p&gt;
 &lt;hr&gt;
-The
-&lt;$button message=&quot;tm-browser-refresh&quot; tooltip={{$:/language/Buttons/Refresh/Hint}} aria-label={{$:/language/Buttons/Refresh/Caption}} class=&lt;&lt;tv-config-toolbar-class&gt;&gt;&gt;
-&lt;$list filter=&quot;[&lt;tv-config-toolbar-icons&gt;match[yes]]&quot;&gt;
-{{$:/core/images/refresh-button}}
-&lt;/$list&gt;
-&lt;$list filter=&quot;[&lt;tv-config-toolbar-text&gt;match[yes]]&quot;&gt;
-&lt;span class=&quot;tc-btn-text&quot;&gt;&lt;$text text={{$:/language/Buttons/Refresh/Caption}}/&gt;&lt;/span&gt;
-&lt;/$list&gt;
-&lt;/$button&gt;
-Button (located below the title) refreshes the wiki, please use this if you want to update the wiki.
+Hello, this is the Info tab for the sidebar. This tab contain useful guides to navigate and use Creator's Tiddly Wiki!
+&lt;br&gt;&lt;br&gt;
+&lt;font color=&quot;#f86861&quot;&gt;Red&lt;/font&gt; text is important, it can save your time. &lt;br&gt;
+&lt;font color=&quot;#f0de79&quot;&gt;Yellow&lt;/font&gt; text is an internal link. It will open that specific page.
 &lt;br&gt;&lt;br&gt;
 If you see an italic text on right side of the page, that is my comment to the content. Usually something to expose the creator.
 
 
 &lt;hr&gt;
 
-Do you see that tab on top of my picture? you can check what does what here!
+Do you see that tab on top of my picture? you can check their purpose here!
 &lt;/center&gt;
 &lt;$macrocall $name=&quot;tabs&quot; tabsList=&quot;[[$:/_/Guide/Side-Info]][[$:/_/Guide/Side-Navigation]][[$:/_/Guide/Side-Active Tab]][[$:/_/Guide/Side-History]][[$:/_/Guide/Side-Misc]]&quot; class=&quot;tc-vertical&quot;/&gt; 
 &lt;center&gt;
@@ -958,11 +987,31 @@ More stuff will be added! Both the guide and the content. I'd love to talk more 
 
 &lt;/center&gt;</pre>
 </div>
+<div caption="Illith Commentary" created="20191211074808149" modified="20191211074904686" tags="$:/tags/TextEditor/Snippet" title="$:/_/Snippet/IllithCommentary">
+<pre>&lt;p style=text-align:right;font-style:italic;font-size:12px;&gt;
+Illith Comment Here!
+&lt;/p&gt;</pre>
+</div>
+<div caption="Pharagraph Color Link" created="20191211073126082" modified="20191211080018491" tags="$:/tags/TextEditor/Snippet" title="$:/_/Snippet/PharagraphColorLink">
+<pre>&lt;p style=color:#f0de79;&gt; This is a Link Colored pharagraph &lt;/p&gt;</pre>
+</div>
+<div caption="Pharagraph Color Warning" created="20191211072819991" modified="20191211075949841" tags="$:/tags/TextEditor/Snippet" title="$:/_/Snippet/PharagraphColorWarning">
+<pre>&lt;p style=color:#f86861;&gt; This is a Warning pharagraph &lt;/p&gt;</pre>
+</div>
+<div caption="Text Color Link / Yellow" created="20191211080044986" modified="20191211080122071" tags="$:/tags/TextEditor/Snippet" title="$:/_/Snippet/TextColorLink">
+<pre>&lt;font color=&quot;#f0de79&quot;&gt;Yellow Text&lt;/font&gt;</pre>
+</div>
+<div caption="Text Color Warning / Red" created="20191211075840516" modified="20191211080123495" tags="$:/tags/TextEditor/Snippet" title="$:/_/Snippet/TextColorWarning">
+<pre>&lt;font color=&quot;#f86861&quot;&gt;Red Text&lt;/font&gt;</pre>
+</div>
+<div caption="Yellho~!" created="20191211074023971" modified="20191211074207617" title="$:/_/WelcomeTutorial">
+<pre>Hello this is Yellow!</pre>
+</div>
 <div created="20191202171841536" modified="20191209152407013" title="$:/config/AutoSave">
 <pre>no</pre>
 </div>
-<div created="20191202191154101" modified="20191209162640625" title="$:/config/DefaultSidebarTab">
-<pre>Creator Info</pre>
+<div created="20191202191154101" modified="20191211080443039" title="$:/config/DefaultSidebarTab">
+<pre>$:/_/Sidebar-Information</pre>
 </div>
 <div title="$:/config/DownloadSaver/AutoSave">
 <pre>no</pre>
@@ -970,8 +1019,8 @@ More stuff will be added! Both the guide and the content. I'd love to talk more 
 <div created="20191202175455849" modified="20191202175455849" title="$:/config/Manager/Show">
 <pre>tags</pre>
 </div>
-<div created="20191202165447468" modified="20191202165447468" title="$:/config/Navigation/UpdateAddressBar">
-<pre>permalink</pre>
+<div created="20191202165447468" modified="20191211080534657" title="$:/config/Navigation/UpdateAddressBar">
+<pre>permaview</pre>
 </div>
 <div created="20191203120311252" modified="20191203120346262" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/advanced-search">
 <pre>hide</pre>
@@ -1045,7 +1094,7 @@ More stuff will be added! Both the guide and the content. I'd love to talk more 
 <div created="20191202170122189" modified="20191202170135909" title="$:/config/TextEditor/EditorHeight/Mode">
 <pre>fixed</pre>
 </div>
-<div created="20191202173650391" modified="20191203113656954" title="$:/config/TextEditor/EnableToolbar">
+<div created="20191202173650391" modified="20191211080452762" title="$:/config/TextEditor/EnableToolbar">
 <pre>yes</pre>
 </div>
 <div created="20191202191146133" modified="20191202191146760" title="$:/config/TiddlerInfo/Mode">
@@ -1057,13 +1106,13 @@ More stuff will be added! Both the guide and the content. I'd love to talk more 
 <div created="20191202191308682" modified="20191203120242719" title="$:/config/TimestampDisable">
 <pre>no</pre>
 </div>
-<div created="20191202165506596" modified="20191202165523547" title="$:/config/Toolbar/ButtonClass">
+<div created="20191202165506596" modified="20191211080601859" title="$:/config/Toolbar/ButtonClass">
 <pre>tc-btn-invisible</pre>
 </div>
-<div created="20191202165549624" modified="20191202165552923" title="$:/config/Toolbar/Icons">
+<div created="20191202165549624" modified="20191210065447717" title="$:/config/Toolbar/Icons">
 <pre>yes</pre>
 </div>
-<div created="20191202165530458" modified="20191202165621998" title="$:/config/Toolbar/Text">
+<div created="20191202165530458" modified="20191211080608585" title="$:/config/Toolbar/Text">
 <pre>no</pre>
 </div>
 <div created="20191202173427233" modified="20191202183936719" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/close-others">
@@ -10912,6 +10961,9 @@ very-muted-foreground: #888888
 <div created="20191202161458879" modified="20191202161500750" title="$:/state/image-picker/system--1217244810">
 <pre>hide</pre>
 </div>
+<div created="20191211072727251" modified="20191211072728857" title="$:/state/image-picker/system--1614077807">
+<pre>hide</pre>
+</div>
 <div created="20191203110139111" modified="20191203110139111" title="$:/state/palettemanager/$:/palettes/Ancient/background">
 <pre>show</pre>
 </div>
@@ -10963,17 +11015,20 @@ very-muted-foreground: #888888
 <div created="20191202153843434" modified="20191202153854652" title="$:/state/plugin-info-2069695326-$:/plugins/tiddlywiki/twitter--1140713763">
 <pre>contents</pre>
 </div>
-<div created="20191202163045851" modified="20191204042756218" title="$:/state/showeditpreview">
+<div created="20191202163045851" modified="20191211072609994" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
 <div created="20191202155251495" modified="20191203111702824" title="$:/state/ShowPaletteEditor">
 <pre>yes</pre>
 </div>
-<div created="20191202145652588" modified="20191209174606023" title="$:/state/sidebar">
+<div created="20191202145652588" modified="20191212110659755" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
 <div created="20191209153053364" modified="20191209153053364" title="$:/state/tab--1002863831">
 <pre>Roadmap</pre>
+</div>
+<div created="20191210065558315" modified="20191210065601203" title="$:/state/tab--1016668953">
+<pre>$:/core/ui/TiddlerInfo/Tools</pre>
 </div>
 <div title="$:/state/tab--1129714006">
 <pre>$:/core/ui/TiddlerInfo/Fields</pre>
@@ -10987,8 +11042,8 @@ very-muted-foreground: #888888
 <div created="20191202172843296" modified="20191209162953749" title="$:/state/tab--1498284803">
 <pre>$:/core/ui/AdvancedSearch/Shadows</pre>
 </div>
-<div created="20191209173440506" modified="20191209175315916" title="$:/state/tab--160294542">
-<pre>$:/_/Guide/Side-Info</pre>
+<div created="20191209173440506" modified="20191211200838148" title="$:/state/tab--160294542">
+<pre>$:/_/Guide/Side-Misc</pre>
 </div>
 <div created="20191203080601498" modified="20191203080655122" title="$:/state/tab--1853787574">
 <pre>Roadmap</pre>
@@ -11002,10 +11057,13 @@ very-muted-foreground: #888888
 <div created="20191209170348335" modified="20191209172752630" title="$:/state/tab--2044694957">
 <pre>$:/_/Guide/Side-Info</pre>
 </div>
-<div created="20191202164905199" modified="20191203115819881" title="$:/state/tab--2112689675">
-<pre>$:/core/ui/ControlPanel/Advanced</pre>
+<div created="20191202164905199" modified="20191211080431730" title="$:/state/tab--2112689675">
+<pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
 <div created="20191209173114532" modified="20191209173310201" title="$:/state/tab--514103498">
+<pre>$:/_/Guide/Side-Navigation</pre>
+</div>
+<div created="20191211072422295" modified="20191211072424504" title="$:/state/tab--519490205">
 <pre>$:/_/Guide/Side-Navigation</pre>
 </div>
 <div created="20191202145702260" modified="20191202183859063" title="$:/state/tab--86143343">
@@ -11017,8 +11075,8 @@ very-muted-foreground: #888888
 <div created="20191202173503718" modified="20191203115920800" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/EditorTypes</pre>
 </div>
-<div created="20191202153856838" modified="20191209174717947" title="$:/state/tab-1163638994">
-<pre>$:/core/ui/MoreSideBar/Plugins/Theme</pre>
+<div created="20191202153856838" modified="20191211080640406" title="$:/state/tab-1163638994">
+<pre>$:/core/ui/MoreSideBar/Plugins/Languages</pre>
 </div>
 <div created="20191202145725469" modified="20191203060818511" title="$:/state/tab-1342078386">
 <pre>$:/core/ui/ControlPanel/Plugins/Add/Themes</pre>
@@ -11038,8 +11096,8 @@ very-muted-foreground: #888888
 <div created="20191203080310015" modified="20191203080324795" title="$:/state/tab-1645887517">
 <pre>Creator Info</pre>
 </div>
-<div created="20191202145657886" modified="20191209153416932" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20191202145657886" modified="20191211080432591" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Settings</pre>
 </div>
 <div created="20191209171531649" modified="20191209172927460" title="$:/state/tab-176898850">
 <pre>$:/_/Guide/Side-Info</pre>
@@ -11050,14 +11108,17 @@ very-muted-foreground: #888888
 <div created="20191202150415309" modified="20191209152412734" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitLab</pre>
 </div>
+<div created="20191211073415103" modified="20191211073418464" title="$:/state/tab-782708143">
+<pre>$:/_/Guide/Side-Active Tab</pre>
+</div>
 <div created="20191209173004744" modified="20191209173007003" title="$:/state/tab-867401039">
 <pre>$:/_/Guide/Side-Misc</pre>
 </div>
 <div created="20191203075145700" modified="20191203075203042" title="$:/state/tab/moresidebar--1335084432">
 <pre>Home</pre>
 </div>
-<div created="20191202153830785" modified="20191209174719559" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/Explorer</pre>
+<div created="20191202153830785" modified="20191212110705331" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/_/DevShortcut</pre>
 </div>
 <div created="20191209170012285" modified="20191209170319243" title="$:/state/tab/sidebar--2044694957">
 <pre>Navigation</pre>
@@ -11065,8 +11126,8 @@ very-muted-foreground: #888888
 <div created="20191209165308088" modified="20191209165953570" title="$:/state/tab/sidebar--356319527">
 <pre>Creator Info</pre>
 </div>
-<div created="20191202145609279" modified="20191209175318223" title="$:/state/tab/sidebar--595412856">
-<pre>$:/_/Sidebar-Information</pre>
+<div created="20191202145609279" modified="20191212110702130" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/More</pre>
 </div>
 <div created="20191202162811910" modified="20191203120040435" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
@@ -11074,7 +11135,7 @@ very-muted-foreground: #888888
 <div created="20191203075551892" modified="20191203075602748" title="$:/state/toc/DevTool-TableOfContents--118161433">
 <pre>close</pre>
 </div>
-<div created="20191202190707647" modified="20191209161313235" title="$:/state/toc/Story-Budding Flower--118161433">
+<div created="20191202190707647" modified="20191211072527194" title="$:/state/toc/Story-Budding Flower--118161433">
 <pre>close</pre>
 </div>
 <div created="20191203115430873" modified="20191203115431594" title="$:/state/toc/Story-Budding Flower--1335084432">
@@ -11083,19 +11144,25 @@ very-muted-foreground: #888888
 <div created="20191203071842814" modified="20191203071843552" title="$:/state/toc/Story-Budding Flower-497309061">
 <pre>close</pre>
 </div>
-<div created="20191204043343182" modified="20191209152441367" title="$:/state/toc/TableOfContents-Character--118161433">
+<div created="20191204043343182" modified="20191211072521791" title="$:/state/toc/TableOfContents-Character--118161433">
 <pre>close</pre>
 </div>
-<div created="20191202181207833" modified="20191209162747615" title="$:/state/toc/TableOfContents-Home--118161433">
+<div created="20191202181207833" modified="20191210145907798" title="$:/state/toc/TableOfContents-Home--118161433">
 <pre>close</pre>
 </div>
-<div created="20191204043416381" modified="20191208204757023" title="$:/state/toc/TableOfContents/Character-Main Character--118161433">
+<div created="20191210064601491" modified="20191210064605490" title="$:/state/toc/TableOfContents-World--118161433">
+<pre>close</pre>
+</div>
+<div created="20191204043416381" modified="20191210145909683" title="$:/state/toc/TableOfContents/Character-Main Character--118161433">
 <pre>open</pre>
 </div>
 <div created="20191209171100059" modified="20191209171100059" title="$:/state/tree/$:/_/">
 <pre>show</pre>
 </div>
 <div created="20191209171743818" modified="20191209171743818" title="$:/state/tree/$:/_/Guide/">
+<pre>show</pre>
+</div>
+<div created="20191211073048348" modified="20191211073048348" title="$:/state/tree/$:/_/Snippet/">
 <pre>show</pre>
 </div>
 <div title="$:/state/tree/$:/boot/">
@@ -11149,14 +11216,14 @@ very-muted-foreground: #888888
 <div created="20191202164824681" modified="20191203061315498" title="$:/state/tree/$:/themes/tiddlywiki/vanilla/">
 <pre>show</pre>
 </div>
-<div list="Home World" title="$:/StoryList">
+<div created="20191212110720166" list="$:/_/DevShortcut Home World" modified="20191212110720167" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20191202183942843" list="$:/core/ui/Buttons/more-tiddler-actions $:/core/ui/Buttons/info $:/core/ui/Buttons/new-here $:/core/ui/Buttons/new-journal-here $:/core/ui/Buttons/clone $:/core/ui/Buttons/edit $:/core/ui/Buttons/delete $:/core/ui/Buttons/permalink $:/core/ui/Buttons/open-window $:/core/ui/Buttons/permaview $:/core/ui/Buttons/close-others $:/core/ui/Buttons/export-tiddler $:/core/ui/Buttons/close $:/core/ui/Buttons/fold-others $:/core/ui/Buttons/fold $:/core/ui/Buttons/fold-bar" modified="20191202183959172" title="$:/tags/ViewToolbar">
 <pre></pre>
 </div>
-<div created="20191202172840767" modified="20191209175004252" title="$:/temp/advancedsearch">
-<pre>refresh</pre>
+<div created="20191202172840767" modified="20191210065656790" title="$:/temp/advancedsearch">
+<pre>home</pre>
 </div>
 <div created="20191202145748531" modified="20191202145748531" title="$:/temp/HidePluginWarning">
 <pre>yes</pre>
@@ -11975,7 +12042,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20191202154551500" dependents="" description="Basic theme" modified="20191202154551500" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" server-url="https://tiddlywiki.com/library/v5.1.21/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.21">
 <pre></pre>
 </div>
-<div created="20191202171702900" modified="20191209175004252" title="$:/temp/search">
+<div created="20191202171702900" modified="20191210145640149" title="$:/temp/search">
 <pre></pre>
 </div>
 <div created="20191203060834215" modified="20191203060834215" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.21/index.html" url="https://tiddlywiki.com/library/v5.1.21/index.html">
@@ -12155,8 +12222,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 
 [[Chapter 1 - Intersecting Fate|Budding Flower - Chapter 1]]</pre>
 </div>
-<div caption="Chapter 1 - Intersecting Fate" created="20191202190634583" modified="20191209161217101" tags="[[Budding Flower]]" title="Budding Flower - Chapter 1">
-<pre>WIP</pre>
+<div caption="Chapter 1 - Intersecting Fate" created="20191202190634583" modified="20191210152357011" tags="[[Budding Flower]]" title="Budding Flower - Chapter 1">
+<pre></pre>
 </div>
 <div created="20191202181125717" list-after="Home" modified="20191209173547533" tags="TableOfContents" title="Character">
 <pre>[[Main Character]]
@@ -12186,8 +12253,16 @@ Clover is bright and strong willed girl. WIP
 <div created="20191208192654177" modified="20191208195908082" tags="WIP" title="Essence">
 <pre>WIP</pre>
 </div>
-<div created="20191209161736652" modified="20191209161741103" tags="WIP" title="Essentia">
-<pre></pre>
+<div created="20191209161736652" modified="20191210075354707" tags="WIP" title="Essentia">
+<pre>&lt;center&gt;//&quot;Let everything governs nothing, as there's nothing in everything&quot;//&lt;/center&gt;
+
+''The World of Essentia ''is full of ancient spirits. These spirit takes all kind of form. Solid, liquid, gas and even air. Eventually, mankind found a way to harness these spirit, using them within themself and then calling it the [[Essence]] of the world.
+
+Despite the blessings whom the Ancient has bestowed upon Human. They still painted the world in red with their own sins. Pointless war happened over the decade, misjudgement to timber down each other for the sake of &quot;justice&quot; and &quot;fairness&quot;, inconspicuously destroying their own hope by submitting to the despair itself, and countless of darkness created by own's light.
+
+Essentia is full of sinners, however, without such sinners to shape the world into what it is right now, the world cannot cast its light for a shadow to exist.
+
+&lt;center&gt;//&quot;Every beginning marks a new ending yet the progresses are often forgotten and lumped down with the darkness. Let this be a memorable jouney for the sake of it.&quot;//&lt;/center&gt;</pre>
 </div>
 <div created="20191208190624882" modified="20191209160516824" tags="WIP" title="Final Quake">
 <pre>WIP</pre>
@@ -12198,7 +12273,7 @@ Clover is bright and strong willed girl. WIP
 <div created="20191208204507587" modified="20191208204512813" tags="WIP" title="Grondelle Capital">
 <pre>WIP</pre>
 </div>
-<div created="20191202150200198" list-before="Character" modified="20191209173547534" tags="TableOfContents" title="Home">
+<div created="20191202150200198" list-before="Character" modified="20191211201022061" tags="TableOfContents" title="Home">
 <pre>!''__Introduction__''
 
 Hello, welcome to the Ground Leaf Project wiki page! This wiki is made with Tiddly Wiki (https://tiddlywiki.com) and Github (https://github.com) as a host! This project is a personal project that I plan to build little by little. The story is about an unfair world and how does one accept that bitter reality.
@@ -12209,16 +12284,18 @@ This is a summary list of the main aspect inside the world of [[Essentia]]
 !!''World''
 The story take part in [[Torkhen Region|Torkhen]]. A mountainous tropical region that is rich with vegetation and enchanted gemstone. The region main source of economy comes from herb &amp; spice farms, enchanted tools, and rare minerals.
 
+!!''Element''
+Element is essentially the magic of the world and it's referred as [[Essence]], a manipulatable energy that floats around everywhere. Essence can only be manipulated by those who have the same affinity with the element, ex: Fire/Wind affinity can only control Fire and Wind Essence. Manipulating essence outside one's speciality is possible by crafty means.
+
+The main gimmick in the region is that Earth Essence is unmanipulatable due to the aftermath of [[Final Quake]] incident 3 years before [[Budding Flower]] chapter.
+
 !!''Monster''
 Monster are uncommon, however, most of them are stronger and bigger in size than humans, taking them down head on alone is nigh impossible. They tend to leave human alone unless agitated. Their loot are sought after for those who seek power and/or convenience, which is to create a durable and unique equipment. &lt;br&gt;
 &lt;p style=text-align:right;font-style:italic;font-size:12px;&gt;
 This is basically taking Monster Hunter Game aspect into the world
 &lt;/p&gt;
 
-!!''Element''
-Element is essentially the magic of the world and it's referred as [[Essence]], a manipulatable energy that floats around everywhere. Essence can only be manipulated by those who have the same affinity with the element, ex: Fire/Wind affinity can only control Fire and Wind Essence. Manipulating essence outside one's speciality is possible by crafty means.
 
-The main gimmick in the region is that Earth Essence is unmanipulatable due to the aftermath of [[Final Quake]] incident 3 years before [[Budding Flower]] chapter.
 
 
 </pre>
@@ -12246,7 +12323,7 @@ The main gimmick in the region is that Earth Essence is unmanipulatable due to t
 <div created="20191202170019035" modified="20191202170026968" title="ProfilePicture.png" type="image/png">
 <pre>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</pre>
 </div>
-<div created="20191202181301440" modified="20191209152950432" tags="Home" title="Roadmap">
+<div created="20191202181301440" modified="20191210075510853" tags="Home" title="Roadmap">
 <pre>```
 Finish up the Tiddly Wiki setup
 
@@ -12267,7 +12344,7 @@ Basic Information Include:
 ```
 
 ```
-Custom icon for all the buttons and list
+Custom icon for the buttons, section and list
 ```
 
 
@@ -12288,10 +12365,7 @@ Custom icon for all the buttons and list
 
 </pre>
 </div>
-<div caption="" created="20191203065609699" modified="20191203065609699" title="TiddlerA">
-<pre></pre>
-</div>
-<div created="20191209154227233" modified="20191209154228226" tags="WIP" title="Torkhen">
+<div created="20191209154227233" modified="20191210064218381" tags="WIP" title="Torkhen">
 <pre></pre>
 </div>
 <div created="20191204043552615" modified="20191208195917495" tags="[[Main Character]]" title="Vivelia Chrystell">
